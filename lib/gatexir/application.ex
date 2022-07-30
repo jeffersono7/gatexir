@@ -13,7 +13,8 @@ defmodule Gatexir.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Gatexir.PubSub},
       # Start the Endpoint (http/https)
-      GatexirWeb.Endpoint
+      GatexirWeb.Endpoint,
+      Gatexir.Engine
       # Start a worker by calling: Gatexir.Worker.start_link(arg)
       # {Gatexir.Worker, arg}
     ]
