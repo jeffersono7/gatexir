@@ -43,5 +43,6 @@ defmodule GatexirWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug GatexirWeb.Router
+  plug GatexirWeb.HandlerController
+  # plug GatexirWeb.Router
 end
