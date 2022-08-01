@@ -17,7 +17,7 @@ defmodule Gatexir.Config do
           Map.update(acc, String.to_atom(service), default, fn _ -> config end)
       end
 
-    {:ok, struct}
+    {:ok, %__MODULE__{mappings: struct}}
   end
 
   defp parse(params), do: params
